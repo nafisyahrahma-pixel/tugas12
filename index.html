@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Mahasiswa Berprestasi</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            background: #f9f9f9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+
+        caption {
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        th, td {
+            border: 1px solid #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #a33160;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #d5adc8;
+            font-weight: bold;
+        }
+
+        /* Baris ganjil */
+        tbody tr:nth-child(odd) {
+            background-color: #f3e6ec;
+        }
+
+        /* Baris genap */
+        tbody tr:nth-child(even) {
+            background-color: #e8d9df;
+        }
+
+        /* Efek hover */
+        tbody tr:hover {
+            background-color: #fde6f3;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Daftar Mahasiswa Berprestasi Universitas Bengkulu 2025</caption>
+    
+    <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Nama Mahasiswa</th>
+            <th scope="col">Program Studi</th>
+            <th scope="col">IPK</th>
+            <th scope="col">Prestasi</th>
+            <th scope="col">Tahun</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Andi Pratama</td>
+            <td rowspan="2">Informatika</td>
+            <td>3.86</td>
+            <td>Juara 1 Web Design</td>
+            <td>2025</td>
+        </tr>
+
+        <tr>
+            <th scope="row">2</th>
+            <td>Salsa Maharani</td>
+            <td>3.91</td>
+            <td>Juara 2 Hackathon Nasional</td>
+            <td>2024</td>
+        </tr>
+
+        <tr>
+            <th scope="row">3</th>
+            <td>Bagas Putra</td>
+            <td>Sistem Informasi</td>
+            <td>3.74</td>
+            <td>Finalis Lomba UI/UX</td>
+            <td>2025</td>
+        </tr>
+
+        <tr>
+            <th scope="row">4</th>
+            <td>Nadia Fitria</td>
+            <td>Teknik Komputer</td>
+            <td>3.65</td>
+            <td>Olimpiade Sains Provinsi</td>
+            <td>2024</td>
+        </tr>
+
+        <tr>
+            <th scope="row">5</th>
+            <td>Rizky Hidayat</td>
+            <td>Informatika</td>
+            <td>3.88</td>
+            <td>Lomba Robotik</td>
+            <td>2025</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="6">Total Mahasiswa: 5</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>
